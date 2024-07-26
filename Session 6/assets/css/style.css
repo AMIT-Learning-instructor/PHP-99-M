@@ -1,0 +1,76 @@
+:root{
+    --primary:blue;
+    --secondary:white;
+    --red-color:rgba(255, 0, 0, 0.525);
+}
+
+body{
+    background-color: beige;
+}
+.lits-item {
+    color: var(--primary);
+}
+
+.title {
+    color: var(--red-color);
+}
+
+.title:hover {
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+
+a:link{
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+a:active{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+a:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10   px;
+    padding: 5px;
+
+}
+span{display: block;}
+span::first-letter{
+    font-size: xx-large;
+    color: gold;
+}
+ol{
+    list-style: none;
+}
+li:nth-child(1){
+    color: green;
+}
+p{
+    /* width: 500px; */
+color: white;
+    background-color: black;
+}
+p::first-line{
+    color: gold;
+}
+.title::after{
+    content: "";
+    width: 20px;
+    height: 5px;
+    background-color: black;
+    border-bottom: 2px dashed blue;
+}
+
+::marker{
+    display: none;
+}
