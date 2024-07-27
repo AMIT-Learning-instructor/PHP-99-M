@@ -150,19 +150,53 @@
 
 
 // destructing
+// const colors = ['red', 'green', 'blue', 'yellow', 'purple'];
 
-let arr = [1,3,2,5,4,6,5,7,6,8,7];
+// let [color1,color2,...remaining] = [...colors];
 
-
-
-
-
-
-
+// console.log(color1);
+// console.log(color2);
+// console.log(remaining);
 
 
+// const nestedArray = [1, [2, 3], [4, [5, 6]]];
+
+// let [num1,[num2,num3],[,nested ]] = [...nestedArray];
+// console.log(num1);
+// console.log(num2);
+// console.log(num3);
+// console.log(nested);
 
 
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let evenArray = numbers.filter(elm => {
+//     return (elm % 2 == 0)
+// })
+
+// let array2 = numbers.filter(elm => {
+//     return (elm > 5)
+// })
+
+// console.log(evenArray);
+// console.log(array2);
+
+// let s = {name: 'Alice', age: 25};
+
+// let {age,name} = {...s}
+// console.log(age);
+// console.log(name);
+
+
+const people = [
+    {name: 'Alice', age: 25},
+     {name: 'Bob', age: 18}, 
+     {name: 'Charlie', age: 30}
+    ];
+let overAge = people.filter(
+    ({age})=>{
+    return age >= 21;
+})
+console.log(overAge);
 
 
 
